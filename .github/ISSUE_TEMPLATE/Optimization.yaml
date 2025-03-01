@@ -1,0 +1,49 @@
+name: ​⚡Optimization
+description: Suggest performance or code quality improvements
+title: "[⚡Optimization]: <write a small description here>"
+labels: ["Optimization", "goal: optimize", "priority: medium"]
+body:
+  - type: textarea
+    attributes:
+      label: 🔍 What needs optimization?
+      description: Specify which part of the code should be improved.
+      placeholder: The function XYZ is inefficient because...
+    validations:
+      required: true
+
+  - type: textarea
+    attributes: 
+      label: 💡Suggested Solution
+      description: Explain how the code can be optimized.
+      placeholder: We can use a different algorithm to improve efficiency...
+    validations:
+      required: true
+      
+  - type: textarea
+    attributes:
+      label: Screenshots
+      description: Please add screenshots if applicable
+      placeholder: Specify which part of the code should be improved.
+    validations:
+      required: false
+      
+  - type: textarea
+    attributes:
+      label: 📌 Additional Context
+      description: Any additional information or provide performance benchmarks or references.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: "Contribution Guidelines"
+      options:
+        - label: "I would like to implement this feature"
+          required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        💡 Thank you for contributing to make our project better!

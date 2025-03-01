@@ -1,0 +1,7 @@
+[build]
+  publish = "."  # Kept this as root since all your files are here
+
+[[redirects]]
+  from = "/*"
+  to = "/:splat"
+  status = 200

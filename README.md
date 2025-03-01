@@ -45,8 +45,6 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## 🌐 Connect
 - **GitHub:** [OpenOct-Guild](https://github.com/OpenOct-Guild/Playit)
-- **Twitter:** [@yourhandle](https://twitter.com)
-- **LinkedIn:** [Your Profile](https://linkedin.com)
 
 ---
 _Enjoy seamless music playback with Playit! 🎶_

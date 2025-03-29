@@ -34,8 +34,13 @@ body {
 }
 
 @keyframes move-twinkle {
-  from { transform: translateY(0); }
-  to { transform: translateY(-1000px); }
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-1000px);
+  }
 }
 
 .stars {
@@ -126,9 +131,17 @@ body {
 }
 
 @keyframes glow {
-  0% { text-shadow: 0 0 10px rgba(255, 0, 0, 0.5); }
-  50% { text-shadow: 0 0 20px rgba(255, 0, 0, 0.8), 0 0 30px rgba(255, 0, 0, 0.6); }
-  100% { text-shadow: 0 0 10px rgba(255, 0, 0, 0.5); }
+  0% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+  }
+
+  50% {
+    text-shadow: 0 0 20px rgba(255, 0, 0, 0.8), 0 0 30px rgba(255, 0, 0, 0.6);
+  }
+
+  100% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+  }
 }
 
 .glowing-text {
@@ -138,8 +151,15 @@ body {
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .fade-in {
@@ -150,9 +170,17 @@ body {
 }
 
 @keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.05); }
-  100% { transform: scale(1); }
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 .pulse {
@@ -184,9 +212,17 @@ body {
 }
 
 @keyframes float {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0px); }
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 .floating {
@@ -472,7 +508,6 @@ body {
   list-style: none;
   max-height: 200px;
   overflow-y: auto;
-  background-color: var(--background-color);
   border-radius: 8px;
   padding: 0.5rem;
 }
@@ -484,6 +519,10 @@ body {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  font-size: 1.2rem;
+  border: #fda085 1px solid;
+
+  background-color: var(--surface-color);
   transition: background-color 0.2s ease;
 }
 
@@ -579,4 +618,39 @@ body {
   .control-buttons {
     gap: 0.5rem;
   }
+}
+
+#file-upload {
+  display: none;
+}
+
+.upload-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-upload {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  color: var(--text-primary);
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-image 0.2s ease;
+  text-align: center;
+}
+
+.custom-upload:hover {
+  background-image: linear-gradient(120deg, #ffce67 0%, #ffb07c 100%);
+}
+
+#upload-text {
+  display: inline-block;
+}
+
+input[type="file"][hidden] {
+  display: none;
 }
